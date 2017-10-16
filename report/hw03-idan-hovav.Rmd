@@ -1,0 +1,15 @@
+---
+title: "HW 03 Ranking NBA Teams"
+subtitle: "Stat 133, Fall 2017"
+author: "Idan Hovav"
+output: github_document
+urlcolor: blue
+---
+
+```{r}
+data <- read.csv('/Users/idanhovav/Programming/Berk/stat133/stat133-hws-fall17/hw03/data/nba2017-roster.csv')
+ggplot(data, aes(x=team, y=salary)) +
+  geom_bar(stat='identity') +
+  coord_flip()
+```
+
